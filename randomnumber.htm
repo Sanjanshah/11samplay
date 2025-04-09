@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator - Sam Play</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="randomnumber.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Sam Play</h1>
+        </div>
+        <nav id="navbar">
+            <div class="menu-icon" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tictactoe.html">Tic Tac Toe</a></li>
+                <li><a href="coinflip.html">Coin Flip</a></li>
+                <li><a href="randomnumber.html" class="active">Random Number</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="game-header">
+            <h2>Random Number Generator</h2>
+            <p>Generate random numbers within your desired range!</p>
+        </section>
+        
+        <section class="game-container">
+            <div class="game-info">
+                <div id="generator-status">Set your range and generate a random number</div>
+            </div>
+            
+            <div class="number-display">
+                <span id="random-number">?</span>
+            </div>
+            
+            <div class="range-controls">
+                <div class="range-input">
+                    <label for="min-number">Minimum:</label>
+                    <input type="number" id="min-number" value="1" min="-99999" max="99999">
+                </div>
+                <div class="range-input">
+                    <label for="max-number">Maximum:</label>
+                    <input type="number" id="max-number" value="100" min="-99999" max="99999">
+                </div>
+            </div>
+            
+            <button id="generate-button" class="btn">Generate Number</button>
+            
+            <div class="history-container">
+                <h3>History</h3>
+                <ul id="generation-history"></ul>
+                <button id="clear-history" class="btn btn-secondary">Clear History</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/1.png" alt="Sam Play Logo">
+                <p>Sam Play &copy; 2025</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="randomnumber.js"></script>
+</body>
+</html>
