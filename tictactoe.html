@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,13 @@
     <link rel="stylesheet" href="tictactoe.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <h1>Sam Play</h1>
+            <a href="index.html">
+                <h1>Sam Play</h1>
+            </a>
         </div>
         <nav id="navbar">
             <div class="menu-icon" id="menu-toggle">
@@ -25,13 +29,13 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <section class="game-header">
             <h2>Tic Tac Toe</h2>
             <p>Classic game of X's and O's. Get three in a row to win!</p>
         </section>
-        
+
         <section class="game-container">
             <div class="game-info">
                 <div id="game-status">Player X's turn</div>
@@ -40,7 +44,7 @@
                     <div>Player O: <span id="score-o">0</span></div>
                 </div>
             </div>
-            
+
             <div class="board" id="board">
                 <div class="cell" data-cell></div>
                 <div class="cell" data-cell></div>
@@ -52,11 +56,11 @@
                 <div class="cell" data-cell></div>
                 <div class="cell" data-cell></div>
             </div>
-            
+
             <button id="reset-game" class="btn">Reset Game</button>
         </section>
     </main>
-    
+
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
@@ -70,8 +74,9 @@
             </div>
         </div>
     </footer>
-    
+
     <script src="script.js"></script>
     <script src="tictactoe.js"></script>
 </body>
+
 </html>
