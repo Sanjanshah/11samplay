@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe - Sam Play</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tictactoe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Sam Play</h1>
+        </div>
+        <nav id="navbar">
+            <div class="menu-icon" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tictactoe.html" class="active">Tic Tac Toe</a></li>
+                <li><a href="coinflip.html">Coin Flip</a></li>
+                <li><a href="randomnumber.html">Random Number</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="game-header">
+            <h2>Tic Tac Toe</h2>
+            <p>Classic game of X's and O's. Get three in a row to win!</p>
+        </section>
+        
+        <section class="game-container">
+            <div class="game-info">
+                <div id="game-status">Player X's turn</div>
+                <div class="score-board">
+                    <div>Player X: <span id="score-x">0</span></div>
+                    <div>Player O: <span id="score-o">0</span></div>
+                </div>
+            </div>
+            
+            <div class="board" id="board">
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+            </div>
+            
+            <button id="reset-game" class="btn">Reset Game</button>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/1.png" alt="Sam Play Logo">
+                <p>Sam Play &copy; 2025</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="tictactoe.js"></script>
+</body>
+</html>
